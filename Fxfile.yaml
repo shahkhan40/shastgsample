@@ -14,6 +14,20 @@ licenses:
 
 imports:
   '@USName': FxLabs/Common/US-Names
+  
+  # SQL Injection Strings 
+  '@GenericSQLInjections': FxLabs/Common/Generic-SQLInjections
+  '@OracleSQLInjections': FxLabs/Common/Oracle-SQLInjections
+  '@PostgresSQLInjections': FxLabs/Common/Postgres-SQLInjections
+  '@SQLServerSQLInjections': FxLabs/Common/SQLServer-SQLInjections
+  '@MySQLSQLInjections': FxLabs/Common/MySQL-SQLInjections
+  
+  # No-SQL DB Injection String
+  '@MongoDBSQLInjections': FxLabs/Common/MongoDB-SQLInjections
+  
+  # Cross-Site Scripting Injection Strings
+  '@XSSSQLInjections': FxLabs/Common/XSS
+  
 
 # App environments
 environments:
