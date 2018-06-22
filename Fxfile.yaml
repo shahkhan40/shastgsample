@@ -3,31 +3,32 @@
 version: '1'
 
 # App (Project) name
-name: Fx-Sample
+name: FX-Sample
 
 # App description
-description: Fx Testing.
+description: FX Testing.
 
 # license
 licenses:
   - APACHE LICENSE, VERSION 2.
 
 imports:
-  '@USName': FxLabs/Common/US-Names
-  
-  # SQL Injection Strings 
-  '@GenericSQLInjections': FxLabs/Common/Generic-SQLInjections
-  '@OracleSQLInjections': FxLabs/Common/Oracle-SQLInjections
-  '@PostgresSQLInjections': FxLabs/Common/Postgres-SQLInjections
-  '@SQLServerSQLInjections': FxLabs/Common/SQLServer-SQLInjections
-  '@MySQLSQLInjections': FxLabs/Common/MySQL-SQLInjections
-  
+  # Importing DataSets from Marketplace.
+  '@USName': FXLabs/Common/US-Names
+
+  # SQL Injection Strings
+  '@GenericSQLInjections': FXLabs/Common/Generic-SQLInjections
+  '@OracleSQLInjections': FXLabs/Common/Oracle-SQLInjections
+  '@PostgresSQLInjections': FXLabs/Common/Postgres-SQLInjections
+  '@SQLServerSQLInjections': FXLabs/Common/SQLServer-SQLInjections
+  '@MySQLSQLInjections': FXLabs/Common/MySQL-SQLInjections
+
   # No-SQL DB Injection String
-  '@MongoDBSQLInjections': FxLabs/Common/MongoDB-SQLInjections
-  
+  '@MongoDBSQLInjections': FXLabs/Common/MongoDB-SQLInjections
+
   # Cross-Site Scripting Injection Strings
-  '@XSSSQLInjections': FxLabs/Common/XSS
-  
+  '@XSSSQLInjections': FXLabs/Common/XSS
+
 
 # App environments
 environments:
@@ -36,42 +37,57 @@ environments:
     # app access credentials
     auths:
       - name: Default
-        authType: BASIC
-        username: admin@fxlabs.io
-        password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
-  - name: Local
-    baseUrl: http://localhost:8080/api/v1
-    # app access credentials
-    auths:
-      - name: Default
-        authType: BASIC
-        username: admin@fxlabs.io
-        password: '{{@Vault.FxLabs/DevMachinePassword}}'
-  - name: Dev
-    baseUrl: http://localhost:8080/api/v1
-    # app access credentials
-    auths:
-      - name: Default
-        authType: BASIC
-        username: admin@fxlabs.io
-        password: '{{@Vault.FxLabs/DevMachinePassword}}'
+        # authType: Basic, OAuth_2_0, Token
+        authType: Basic
+        username: username@example.com
+        password: mypassword
+        # Inject password from FX Vault
+        #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
+#     - name: QE
+#       # base URL
+#       baseUrl: http://qe.fxlabs.io/api/v1
+#       # app access credentials
+#       auths:
+#        - name: Default
+#          # authType: Basic, OAuth_2_0, Token
+#          authType: Basic
+#          username: username@example.com
+#          password: mypassword
+#      #OAuth 2.0 Example
+#      - name: Stg
+#        authType: OAuth_2_0
+#        grantType: password                # (e.g. authorization_code, implicit, client_credentials, password)
+#        username: peter@example.com        # Optional - Only applies if grantType == password
+#        password: password                 # Optional - Only applies if grantType == password
+#        clientId: gigy                     #
+#        clientSecret: secret               #
+#        id: some-id                        # Optional | unique random string
+#        accessTokenUri: http://<>/token    #
+#        userAuthorizationUri:              # Optional
+#        clientAuthenticationScheme: form   # (e.g. form,header,none,query)
+#        authorizationScheme: form          # (e.g. form,header,none,query)
+#        scope: read,write
+#      #Token Example
+#      - name: Stg
+#        authType: Token
+#        header_1: 'cookie: JWTTOKEN=Token' # (e.g. 1)
+#        header_1: 'Authorization: <type> <credentials>' # (e.g. 2)
+
+
+
 # Job profiles
 jobs:
   - name: Stg
+    # refers the the env defined above
     environment: Stg
     tags:
       - V1
-    regions: FxLabs/US_WEST_1
-    cron: '0 30 * ? * *'
+    # Bot region
+    regions: FXLabs/US_WEST_1
+    # 0 15 10 ? * * -> Fire at 10:15am every day
+    cron: '0 15 10 ? * *'
     #issueTracker: FxLabs/Stg-GitHub-Bot
-  - name: Local
-    environment: Local
-    tags:
-      - V1
-    regions: FxLabs/US_WEST_1
-    issueTracker: FxLabs/IT-Test
-  - name: SANDBOX
-    environment: Dev
-    tags:
-      - SANDBOX
-    regions: FxLabs/US_WEST_1
+#  - name: SANDBOX
+#    environment: Stg
+#    tags:
+#      - SANDBOX

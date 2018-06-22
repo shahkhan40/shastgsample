@@ -1,0 +1,41 @@
+---
+# Validates sign-ups.
+
+authors:
+  - Developer1
+
+endpoint: /users/personal-sign-up
+method: POST # GET PUT POST DELETE
+auth: NONE
+# auth: Default
+
+testCases:
+  # Faker reference https://github.com/DiUS/java-faker
+  #
+  - id: 1
+    body: '{
+      "name": "{{@Faker.name.fullName}}",
+      "email": "{{@Faker.internet.safeEmailAddress}}",
+      "password": "{{@RandomNumeric | 10}}",
+      "company": "{{@Faker.company.name}}"
+    }'
+
+assertions:
+  - "@StatusCode == 200"
+  - "@Response.errors == false"
+  - "@Response.data.id != @EMPTY"
+  - "@Response.data.name == @Request.name"
+  - "@Response.data.email == @Request.email"
+  - "@Response.data.company == @Request.company"
+  - "@ResponseTime < 2000" # milliseconds
+  - "@ResponseSize < 1024" # bytes
+
+tags:
+  - V2
+
+policies:
+  logger: DEBUG
+  #repeat: 2
+
+# inactive: false
+inactive: true
