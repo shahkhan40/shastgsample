@@ -43,6 +43,12 @@ environments:
         password: mypassword
         # Inject password from FX Vault
         #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
+      # Used by in-valid credential security workflow.
+      - name: INVALID_AUTH
+        authType: Basic
+        username: username@example.com
+        # either username or password or both can be invalid.
+        password: invalid-pass
 #     - name: QE
 #       # base URL
 #       baseUrl: http://qe.fxlabs.io/api/v1
