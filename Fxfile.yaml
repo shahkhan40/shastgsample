@@ -33,7 +33,7 @@ imports:
 # App environments
 environments:
   - name: Stg
-    baseUrl: http://http://13.57.51.56/api/v1
+    baseUrl:http://13.57.51.56/api/v1
     # app access credentials
     auths:
       - name: Default
