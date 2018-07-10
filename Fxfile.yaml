@@ -3,7 +3,7 @@
 version: '1'
 
 # App (Project) name
-name: FX-Sample
+name: shahsample
 
 # App description
 description: FX Testing.
@@ -95,7 +95,7 @@ jobs:
     # 0 15 10 ? * * -> Fire at 10:15am every day
     cron: '0 15 10 ? * *'
     issueTracker: 
-      name: Dev-IssueTracker
+      name: Stg-IssueTracker
       # e.g. https://github.com/shoukathmd/courseapo
       url: <<changeme>>
       account: Default_GitHub
