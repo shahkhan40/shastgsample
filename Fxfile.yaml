@@ -85,9 +85,9 @@ environments:
 
 # Job profiles
 jobs:
-  - name: Dev
+  - name: jobstg
     # refers the the env defined above
-    environment: Dev
+    environment: http://13.57.51.56/api/v1
     tags:
       - V1
     # Bot regions - https://cloud.fxlabs.io/#/app/superbotnetwork
