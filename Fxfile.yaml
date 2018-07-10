@@ -33,7 +33,7 @@ imports:
 # App environments
 environments:
   - name: Stg
-    baseUrl:http://13.57.51.56/api/v1
+    baseUrl: http://13.57.51.56/api/v1
     # app access credentials
     auths:
       - name: Default
@@ -87,7 +87,7 @@ environments:
 jobs:
   - name: jobstg
     # refers the the env defined above
-    environment: http://13.57.51.56/api/v1
+    environment: Stg
     tags:
       - V1
     # Bot regions - https://cloud.fxlabs.io/#/app/superbotnetwork
