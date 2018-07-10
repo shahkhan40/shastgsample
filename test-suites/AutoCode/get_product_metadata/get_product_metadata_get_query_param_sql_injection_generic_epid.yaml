@@ -1,0 +1,40 @@
+---
+parent: "get_product_metadata"
+name: "get_product_metadata_get_query_param_sql_injection_generic_epid"
+description: "This call retrieves an array of all supported aspects, aspect constraints,\
+  \ and aspect values for the specified catalog product and its associated or suggested\
+  \ categories, as well as the values currently associated with that product. The\
+  \ array is a union (with duplicates removed) of all returned aspects.Note: This\
+  \ call is currently supported only in the eBay Sandbox environment (https://api.sandbox.ebay.com).\
+  \ After using the search and getProduct calls to find a catalog product that matches\
+  \ a seller's inventory item, you may discover a matching product, but determine\
+  \ that one or more product details are missing or inaccurate. You can propose updates\
+  \ to the product's aspects and aspect values for the catalog by taking the following\
+  \ steps: Use the Taxonomy API's category_tree calls to discover the appropriate\
+  \ category or categories for the seller's inventory item. See Finding categories\
+  \ for a listing or promotion. Use getProductMetadata to determine the aspects of\
+  \ your selected categories and the values of those aspects that should be added\
+  \ to the aspects and values already associated with your product. Use the createChangeRequest\
+  \ call to to submit a change request to update the product in the eBay catalog for\
+  \ your seller's marketplace.Note: The X-EBAY-C-MARKETPLACE-ID request header is\
+  \ required to identify the user's business context. The eBay Product Identifier\
+  \ (ePID) for a catalog product is also required and is specified through the epid\
+  \ query parameter."
+type: "SUITE"
+endpoint: "/get_product_metadata?epid={{@GenericSQLInjections}}"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Security_SQL_Injection"
+severity: "Major"
+inactive: false
+policies: null

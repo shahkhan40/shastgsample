@@ -1,0 +1,33 @@
+---
+parent: "change_request"
+name: "change_request_get_path_param_sql_injection_MySQL_limit"
+description: "Use this call to search for and retrieve one or more catalog change\
+  \ requests that were submitted by the authenticated user based on their creation\
+  \ date, processing status, reference type or reference ID.Note: This call is currently\
+  \ supported only in the eBay Sandbox environment (https://api.sandbox.ebay.com)."
+type: "SUITE"
+endpoint: "/change_request?limit={{@MySQLSQLInjections}}"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Security_SQL_Injection"
+severity: "Major"
+inactive: false
+policies:
+  initExec: "Request"
+  cleanupExec: "Request"
+  logger: "DEBUG"
+  timeoutSeconds: 300
+  repeatOnFailure: 0
+  repeat: 0
+  repeatModule: "@MySQLSQLInjections"
+  repeatDelay: 0

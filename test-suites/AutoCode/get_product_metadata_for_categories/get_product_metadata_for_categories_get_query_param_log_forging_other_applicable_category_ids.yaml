@@ -1,0 +1,37 @@
+---
+parent: "get_product_metadata_for_categories"
+name: "get_product_metadata_for_categories_get_query_param_log_forging_other_applicable_category_ids"
+description: "This call retrieves an array of all supported aspects, aspect constraints,\
+  \ and aspect values for the specified eBay categories. The array is a union (with\
+  \ duplicates removed) of all returned aspects.Note: This call is currently supported\
+  \ only in the eBay Sandbox environment (https://api.sandbox.ebay.com). After using\
+  \ the search and getProduct calls to find a catalog product that matches a seller's\
+  \ inventory item, you may determine that a matching product does not exist in the\
+  \ eBay catalog. You can propose a new product for the catalog by taking the following\
+  \ steps: Use the Taxonomy API's category_tree calls to discover the appropriate\
+  \ category or categories for the seller's inventory item. See Finding categories\
+  \ for a listing or promotion. Use getProductMetadataForCategories to determine the\
+  \ aspects of your selected categories that should be associated with your new product.\
+  \ Use the createChangeRequest call to to submit a change request to add the new\
+  \ product to the eBay catalog for your seller's marketplace.Note: The X-EBAY-C-MARKETPLACE-ID\
+  \ request header is required to identify the user's business context. At least one\
+  \ eBay category ID is required and is specified through the primary_category_id\
+  \ query parameter."
+type: "SUITE"
+endpoint: "/get_product_metadata_for_categories?other_applicable_category_ids=DEBUG:嶑"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Security_DDOS"
+severity: "Major"
+inactive: false
+policies: null

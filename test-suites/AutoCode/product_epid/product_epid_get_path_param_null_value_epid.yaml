@@ -1,0 +1,28 @@
+---
+parent: "product_epid"
+name: "product_epid_get_path_param_null_value_epid"
+description: "This call retrieves details of the catalog product identified by the\
+  \ eBay product identifier (ePID) specified in the request. These details include\
+  \ the product's title and description, aspects and their values, associated images,\
+  \ applicable category IDs, and any recognized identifiers that apply to the product.\
+  \ For a new listing, you can use the search call to identify candidate products\
+  \ on which to base the listing, then use the getProduct call to present the full\
+  \ details of those candidate products to the seller to makea a final selection."
+type: "SUITE"
+endpoint: "/product/null"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Bug"
+severity: "Major"
+inactive: false
+policies: null

@@ -1,0 +1,28 @@
+---
+parent: "product_@randominteger"
+name: "product_@randominteger_get_auth_invalid"
+description: "This call retrieves details of the catalog product identified by the\
+  \ eBay product identifier (ePID) specified in the request. These details include\
+  \ the product's title and description, aspects and their values, associated images,\
+  \ applicable category IDs, and any recognized identifiers that apply to the product.\
+  \ For a new listing, you can use the search call to identify candidate products\
+  \ on which to base the listing, then use the getProduct call to present the full\
+  \ details of those candidate products to the seller to makea a final selection."
+type: "SUITE"
+endpoint: "/product/{{@RandomInteger}}"
+method: "GET"
+auth: "INVALID_AUTH"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: null
+severity: null
+inactive: false
+policies: null
