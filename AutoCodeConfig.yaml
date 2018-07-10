@@ -9,17 +9,17 @@ databases:
   - name: Oracle
     version: 5.0
     description: test
-    inactive: false
+    inactive: true
   
   - name: Postgres
     version: 5.0
     description: test
-    inactive: false
+    inactive: true
   
   - name: SQLServer
     version: 5.0
     description: test
-    inactive: false
+    inactive: true
     
 logForgingPatterns:
   - "INFO:(a-z|A-Z|0-9|.|!|@|#|$|%|&)+"
