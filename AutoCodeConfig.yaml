@@ -30,14 +30,12 @@ testSuites:
   - category: anonymous_invalid
     postfix: anonymous_invalid
     assertions:
-      - "@StatusCode == 504"
-      - "@Response.data.errors == true"
+      - "@StatusCode != 200"
       
   - category: auth_invalid
     postfix: auth_invalid
     assertions:
-      - "@StatusCode == 504"
-      - "@Response.data.errors == true"
+      - "@StatusCode != 200"
       
   - category: DDOS
     postfix: DDOS
