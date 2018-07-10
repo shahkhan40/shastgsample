@@ -33,14 +33,14 @@ imports:
 # App environments
 environments:
   - name: Stg
-    baseUrl: http://13.57.51.56/api/v1
+    baseUrl: http://stg1.fxlabs.io6/api/v1
     # app access credentials
     auths:
       - name: Default
         # authType: Basic, OAuth_2_0, Token
         authType: Basic
-        username: admin@fxlabs.local 
-        password: fxadmin123
+        username: admin@fxlabs.com 
+        password: admin123$
         # Inject password from FX Vault
         #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
       # Used by in-valid credential security workflow.
