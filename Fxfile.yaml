@@ -32,23 +32,25 @@ imports:
 
 # App environments
 environments:
-  - name: Stg
-    baseUrl: http://stg1.fxlabs.io/api/v1
+  - name: Dev
+    baseUrl: <<changeme>>
     # app access credentials
     auths:
       - name: Default
         # authType: Basic, OAuth_2_0, Token
         authType: Basic
-        username: username@example.com
-        password: mypassword
+        username: <<changeme>>
+        password: <<changeme>>
         # Inject password from FX Vault
         #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
       # Used by in-valid credential security workflow.
       - name: INVALID_AUTH
         authType: Basic
-        username: username@example.com
+        username: invalid@example.com
         # either username or password or both can be invalid.
         password: invalid-pass
+
+# e.g. second environment.        
 #     - name: QE
 #       # base URL
 #       baseUrl: http://qe.fxlabs.io/api/v1
@@ -83,16 +85,30 @@ environments:
 
 # Job profiles
 jobs:
-  - name: Stg
+  - name: Dev
     # refers the the env defined above
-    environment: Stg
+    environment: Dev
     tags:
       - V1
-    # Bot region
+    # Bot regions - https://cloud.fxlabs.io/#/app/superbotnetwork
     regions: FXLabs/US_WEST_1
     # 0 15 10 ? * * -> Fire at 10:15am every day
     cron: '0 15 10 ? * *'
-    #issueTracker: FxLabs/Stg-GitHub-Bot
+    issueTracker: 
+      name: Dev-IssueTracker
+      # e.g. https://github.com/shoukathmd/courseapo
+      url: <<changeme>>
+      account: Default_GitHub
+    notifications: 
+      - name: Dev-Slack-Notification
+        channel: <<changeme>>
+        account: Default_Slack
+      - name: Dev-Email-Notification
+        # enter your email
+        to: <<changeme>>
+        account: Default_Email
+
+# e.g. second job.
 #  - name: SANDBOX
 #    environment: Stg
 #    tags:
