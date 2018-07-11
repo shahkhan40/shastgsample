@@ -38,14 +38,14 @@ environments:
     auths:
       - name: Default
         # authType: Basic, OAuth_2_0, Token
-        authType: Basic
+        authType: BASIC
         username: admin@fxlabs.com 
         password: admin123$
         # Inject password from FX Vault
         #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
       # Used by in-valid credential security workflow.
       - name: INVALID_AUTH
-        authType: Basic
+        authType: BASIC
         username: invalid@example.com
         # either username or password or both can be invalid.
         password: invalid-pass
