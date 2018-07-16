@@ -1,0 +1,27 @@
+---
+parent: "api_v1_envs"
+name: "api_v1_envs_post_XSS_Injection"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/envs"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"auths\":[],\"baseUrl\":\"{{@Random | 8}}\",\"description\":\"{{@XSSSQLInjections}}\"\
+    ,\"inactive\":null,\"name\":\"{{@Random | 8}}\",\"projectId\":\"{{@Random | 8}}\"\
+    ,\"refId\":\"{{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "XSS_Injection"
+severity: "Major"
+inactive: false
+policies: null

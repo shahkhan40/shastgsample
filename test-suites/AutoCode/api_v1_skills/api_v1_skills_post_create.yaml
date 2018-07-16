@@ -1,0 +1,30 @@
+---
+parent: "api_v1_skills"
+name: "api_v1_skills_post_create"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/skills"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"accessKey\":\"{{@Random | 8}}\",\"description\":\"{{@Random | 8}}\",\"\
+    host\":\"{{@Random | 8}}\",\"inactive\":null,\"key\":\"{{@Random | 8}}\",\"name\"\
+    :\"{{@Random | 8}}\",\"opts\":[],\"org\":{\"inactive\":null,\"name\":\"{{@Random\
+    \ | 8}}\"},\"prop1\":\"{{@Random | 8}}\",\"prop2\":\"{{@Random | 8}}\",\"prop3\"\
+    :\"{{@Random | 8}}\",\"prop4\":\"{{@Random | 8}}\",\"prop5\":\"{{@Random | 8}}\"\
+    ,\"secretKey\":\"{{@Random | 8}}\",\"skillType\":\"{{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

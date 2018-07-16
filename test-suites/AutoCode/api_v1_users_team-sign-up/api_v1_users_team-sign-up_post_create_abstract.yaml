@@ -1,0 +1,29 @@
+---
+parent: "api_v1_users_team-sign-up"
+name: "api_v1_users_team-sign-up_post_create_abstract"
+description: null
+type: "ABSTRACT"
+endpoint: "/api/v1/users/team-sign-up"
+method: "POST"
+auth: ""
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"accountNonExpired\":null,\"accountNonLocked\":null,\"company\":\"{{@Faker.company.name}}\"\
+    ,\"credentialsNonExpired\":null,\"email\":\"{{@Faker.internet.emailAddress}}\"\
+    ,\"enabled\":null,\"inactive\":null,\"jobTitle\":\"{{@Faker.job.title}}\",\"location\"\
+    :\"{{@Random | 8}}\",\"name\":\"{{@Random | 8}}\",\"password\":\"{{@Random | 8}}\"\
+    ,\"privileges\":[],\"username\":\"{{@Faker.name.username}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

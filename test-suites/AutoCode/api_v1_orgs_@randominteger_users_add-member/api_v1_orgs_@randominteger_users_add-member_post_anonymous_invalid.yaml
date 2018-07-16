@@ -1,0 +1,22 @@
+---
+parent: "api_v1_orgs_@randominteger_users_add-member"
+name: "api_v1_orgs_@randominteger_users_add-member_post_anonymous_invalid"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/orgs/{{@RandomInteger}}/users/add-member"
+method: "POST"
+auth: "NONE"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "UnSecured"
+severity: "Major"
+inactive: false
+policies: null

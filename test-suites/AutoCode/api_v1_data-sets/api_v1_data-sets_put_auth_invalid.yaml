@@ -1,0 +1,22 @@
+---
+parent: "api_v1_data-sets"
+name: "api_v1_data-sets_put_auth_invalid"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/data-sets"
+method: "PUT"
+auth: "INVALID_AUTH"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "UnSecured"
+severity: "Major"
+inactive: false
+policies: null

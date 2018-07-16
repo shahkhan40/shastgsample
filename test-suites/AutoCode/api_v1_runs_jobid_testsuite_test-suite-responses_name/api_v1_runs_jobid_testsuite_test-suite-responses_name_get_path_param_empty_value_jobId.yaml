@@ -1,0 +1,22 @@
+---
+parent: "api_v1_runs_jobid_testsuite_test-suite-responses_name"
+name: "api_v1_runs_jobid_testsuite_test-suite-responses_name_get_path_param_empty_value_jobId"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/runs//testSuite/test-suite-responses/{name}"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Negative"
+severity: "Major"
+inactive: false
+policies: null

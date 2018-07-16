@@ -1,0 +1,22 @@
+---
+parent: "api_v1_orgs_orgid_org-user_orguserid"
+name: "api_v1_orgs_orgid_org-user_orguserid_get_path_param_special_chars_orgUserId"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/orgs/{orgId}/org-user/!@#$%^&*()"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Negative"
+severity: "Major"
+inactive: false
+policies: null

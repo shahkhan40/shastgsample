@@ -1,0 +1,27 @@
+---
+parent: "api_v1_data-sets"
+name: "api_v1_data-sets_post_create"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/data-sets"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"inactive\":null,\"name\":\"{{@Random | 8}}\",\"project\":{\"inactive\"\
+    :null,\"name\":\"{{@Random | 8}}\",\"org\":{\"inactive\":null,\"name\":\"{{@Random\
+    \ | 8}}\"}},\"props\":null}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

@@ -1,0 +1,22 @@
+---
+parent: "api_v1_dashboard_projects_id_savings"
+name: "api_v1_dashboard_projects_id_savings_get_path_param_null_value_id"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/dashboard/projects/null/savings"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Negative"
+severity: "Major"
+inactive: false
+policies: null

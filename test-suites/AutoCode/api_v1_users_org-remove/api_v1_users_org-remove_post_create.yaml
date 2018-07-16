@@ -1,0 +1,30 @@
+---
+parent: "api_v1_users_org-remove"
+name: "api_v1_users_org-remove_post_create"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/users/org-remove"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"inactive\":null,\"org\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\"\
+    },\"orgRole\":\"{{@Random | 8}}\",\"status\":\"{{@Random | 8}}\",\"users\":{\"\
+    company\":\"{{@Faker.company.name}}\",\"email\":\"{{@Faker.internet.emailAddress}}\"\
+    ,\"inactive\":null,\"jobTitle\":\"{{@Faker.job.title}}\",\"location\":\"{{@Random\
+    \ | 8}}\",\"name\":\"{{@Random | 8}}\",\"username\":\"{{@Faker.name.username}}\"\
+    }}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

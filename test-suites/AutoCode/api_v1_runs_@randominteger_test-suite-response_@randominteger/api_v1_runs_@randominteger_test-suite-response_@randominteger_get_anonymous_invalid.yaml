@@ -1,0 +1,22 @@
+---
+parent: "api_v1_runs_@randominteger_test-suite-response_@randominteger"
+name: "api_v1_runs_@randominteger_test-suite-response_@randominteger_get_anonymous_invalid"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/runs/{{@RandomInteger}}/test-suite-response/{{@RandomInteger}}"
+method: "GET"
+auth: "NONE"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "UnSecured"
+severity: "Major"
+inactive: false
+policies: null

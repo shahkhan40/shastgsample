@@ -1,0 +1,33 @@
+---
+parent: "api_v1_notifications"
+name: "api_v1_notifications_post_rbac_create_abstract"
+description: null
+type: "ABSTRACT"
+endpoint: "/api/v1/notifications"
+method: "POST"
+auth: ""
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"accessKey\":\"{{@Random | 8}}\",\"account\":{\"accessKey\":\"{{@Random\
+    \ | 8}}\",\"accountType\":\"{{@Random | 8}}\",\"allowedRegions\":[],\"inactive\"\
+    :null,\"name\":\"{{@Random | 8}}\",\"org\":{\"inactive\":null,\"name\":\"{{@Random\
+    \ | 8}}\"},\"prop1\":\"{{@Random | 8}}\",\"prop2\":\"{{@Random | 8}}\",\"prop3\"\
+    :\"{{@Random | 8}}\",\"region\":\"{{@Random | 8}}\",\"secretKey\":\"{{@Random\
+    \ | 8}}\"},\"channel\":\"{{@Random | 8}}\",\"inactive\":null,\"name\":\"{{@Random\
+    \ | 8}}\",\"org\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\"},\"secretKey\"\
+    :\"{{@Random | 8}}\",\"token\":\"{{@Random | 8}}\",\"type\":\"{{@Random | 8}}\"\
+    ,\"visibility\":\"{{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

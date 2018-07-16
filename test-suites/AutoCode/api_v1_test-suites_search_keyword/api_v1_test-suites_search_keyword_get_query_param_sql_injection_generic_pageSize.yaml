@@ -1,0 +1,22 @@
+---
+parent: "api_v1_test-suites_search_keyword"
+name: "api_v1_test-suites_search_keyword_get_query_param_sql_injection_generic_pageSize"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/test-suites/search/{keyword}?pageSize={{@GenericSQLInjections}}"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "SQL_Injection"
+severity: "Major"
+inactive: false
+policies: null

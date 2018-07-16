@@ -1,0 +1,34 @@
+---
+parent: "api_v1_projects"
+name: "api_v1_projects_post_XSS_Injection"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/projects"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"account\":{\"accessKey\":\"{{@Random | 8}}\",\"accountType\":\"{{@Random\
+    \ | 8}}\",\"allowedRegions\":[],\"inactive\":null,\"name\":\"{{@Random | 8}}\"\
+    ,\"org\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\"},\"prop1\":\"{{@Random\
+    \ | 8}}\",\"prop2\":\"{{@Random | 8}}\",\"prop3\":\"{{@Random | 8}}\",\"region\"\
+    :\"{{@Random | 8}}\",\"secretKey\":\"{{@Random | 8}}\"},\"autoGenSuites\":null,\"\
+    branch\":\"{{@Random | 8}}\",\"description\":\"{{@XSSSQLInjections}}\",\"genPolicy\"\
+    :\"{{@Random | 8}}\",\"inactive\":null,\"lastCommit\":\"{{@Random | 8}}\",\"lastSync\"\
+    :null,\"licenses\":[],\"name\":\"{{@Random | 8}}\",\"openAPISpec\":\"{{@Random\
+    \ | 8}}\",\"org\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\"},\"props\":null,\"\
+    url\":\"{{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "XSS_Injection"
+severity: "Major"
+inactive: false
+policies: null

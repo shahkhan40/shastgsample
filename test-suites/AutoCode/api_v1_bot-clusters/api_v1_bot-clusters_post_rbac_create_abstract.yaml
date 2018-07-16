@@ -1,0 +1,35 @@
+---
+parent: "api_v1_bot-clusters"
+name: "api_v1_bot-clusters_post_rbac_create_abstract"
+description: null
+type: "ABSTRACT"
+endpoint: "/api/v1/bot-clusters"
+method: "POST"
+auth: ""
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"account\":{\"accessKey\":\"{{@Random | 8}}\",\"accountType\":\"{{@Random\
+    \ | 8}}\",\"allowedRegions\":[],\"inactive\":null,\"name\":\"{{@Random | 8}}\"\
+    ,\"org\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\"},\"prop1\":\"{{@Random\
+    \ | 8}}\",\"prop2\":\"{{@Random | 8}}\",\"prop3\":\"{{@Random | 8}}\",\"region\"\
+    :\"{{@Random | 8}}\",\"secretKey\":\"{{@Random | 8}}\"},\"cloudType\":\"{{@Random\
+    \ | 8}}\",\"driver\":\"{{@Random | 8}}\",\"inactive\":null,\"key\":\"{{@Random\
+    \ | 8}}\",\"live\":null,\"manual\":null,\"manualScript\":\"{{@Random | 8}}\",\"\
+    max\":null,\"min\":null,\"name\":\"{{@Random | 8}}\",\"nodeId\":\"{{@Random |\
+    \ 8}}\",\"org\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\"},\"region\":\"\
+    {{@Random | 8}}\",\"status\":\"{{@Random | 8}}\",\"visibility\":\"{{@Random |\
+    \ 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

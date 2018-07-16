@@ -1,0 +1,31 @@
+---
+parent: "api_v1_jobs"
+name: "api_v1_jobs_post_create_abstract"
+description: null
+type: "ABSTRACT"
+endpoint: "/api/v1/jobs"
+method: "POST"
+auth: ""
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"cron\":\"{{@Random | 8}}\",\"description\":\"{{@Random | 8}}\",\"environment\"\
+    :\"{{@Random | 8}}\",\"inactive\":null,\"issueTracker\":{\"account\":\"{{@Random\
+    \ | 8}}\",\"name\":\"{{@Random | 8}}\",\"url\":\"{{@Random | 8}}\"},\"name\":\"\
+    {{@Random | 8}}\",\"nextFire\":null,\"notifications\":[],\"project\":{\"inactive\"\
+    :null,\"name\":\"{{@Random | 8}}\",\"org\":{\"inactive\":null,\"name\":\"{{@Random\
+    \ | 8}}\"}},\"refId\":\"{{@Random | 8}}\",\"regions\":\"{{@Random | 8}}\",\"tags\"\
+    :[]}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

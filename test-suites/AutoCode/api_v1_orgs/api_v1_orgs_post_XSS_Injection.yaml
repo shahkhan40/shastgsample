@@ -1,0 +1,28 @@
+---
+parent: "api_v1_orgs"
+name: "api_v1_orgs_post_XSS_Injection"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/orgs"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"billingEmail\":\"{{@Random | 8}}\",\"company\":\"{{@Faker.company.name}}\"\
+    ,\"description\":\"{{@XSSSQLInjections}}\",\"inactive\":null,\"location\":\"{{@Random\
+    \ | 8}}\",\"name\":\"{{@Random | 8}}\",\"orgPlan\":\"{{@Random | 8}}\",\"orgType\"\
+    :\"{{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "XSS_Injection"
+severity: "Major"
+inactive: false
+policies: null

@@ -1,0 +1,22 @@
+---
+parent: "api_v1_projects_id_files"
+name: "api_v1_projects_id_files_get_path_param_special_chars_id"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/projects/!@#$%^&*()/files"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Negative"
+severity: "Major"
+inactive: false
+policies: null

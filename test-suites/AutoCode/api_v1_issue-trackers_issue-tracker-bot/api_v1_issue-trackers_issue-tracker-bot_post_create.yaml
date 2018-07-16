@@ -1,0 +1,34 @@
+---
+parent: "api_v1_issue-trackers_issue-tracker-bot"
+name: "api_v1_issue-trackers_issue-tracker-bot_post_create"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/issue-trackers/issue-tracker-bot"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"account\":{\"accessKey\":\"{{@Random | 8}}\",\"accountType\":\"{{@Random\
+    \ | 8}}\",\"allowedRegions\":[],\"inactive\":null,\"name\":\"{{@Random | 8}}\"\
+    ,\"org\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\"},\"prop1\":\"{{@Random\
+    \ | 8}}\",\"prop2\":\"{{@Random | 8}}\",\"prop3\":\"{{@Random | 8}}\",\"region\"\
+    :\"{{@Random | 8}}\",\"secretKey\":\"{{@Random | 8}}\"},\"description\":\"{{@XSSSQLInjections}}\"\
+    ,\"inactive\":null,\"name\":\"{{@Random | 8}}\",\"opts\":[],\"org\":{\"inactive\"\
+    :null,\"name\":\"{{@Random | 8}}\"},\"prop1\":\"{{@Random | 8}}\",\"prop2\":\"\
+    {{@Random | 8}}\",\"prop3\":\"{{@Random | 8}}\",\"prop4\":\"{{@Random | 8}}\"\
+    ,\"prop5\":\"{{@Random | 8}}\",\"skill\":{\"inactive\":null,\"name\":\"{{@Random\
+    \ | 8}}\"},\"state\":\"{{@Random | 8}}\",\"visibility\":\"{{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

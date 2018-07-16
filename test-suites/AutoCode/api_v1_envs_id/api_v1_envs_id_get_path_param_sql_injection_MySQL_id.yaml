@@ -1,0 +1,30 @@
+---
+parent: "api_v1_envs_id"
+name: "api_v1_envs_id_get_path_param_sql_injection_MySQL_id"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/envs/{{@MySQLSQLInjections}}"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "SQL_Injection"
+severity: "Major"
+inactive: false
+policies:
+  initExec: "Request"
+  cleanupExec: "Request"
+  logger: "DEBUG"
+  timeoutSeconds: 300
+  repeatOnFailure: 0
+  repeat: 0
+  repeatModule: "@MySQLSQLInjections"
+  repeatDelay: 0

@@ -1,0 +1,22 @@
+---
+parent: "api_v1_issue-trackers"
+name: "api_v1_issue-trackers_get_query_param_DDOS_page"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/issue-trackers?page=1001"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "DDOS"
+severity: "Major"
+inactive: false
+policies: null

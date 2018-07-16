@@ -1,0 +1,26 @@
+---
+parent: "api_v1_data-records"
+name: "api_v1_data-records_post_create_abstract"
+description: null
+type: "ABSTRACT"
+endpoint: "/api/v1/data-records"
+method: "POST"
+auth: ""
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"dataSet\":\"{{@Random | 8}}\",\"inactive\":null,\"record\":\"{{@Random\
+    \ | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Functional"
+severity: "Major"
+inactive: false
+policies: null

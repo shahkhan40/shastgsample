@@ -1,0 +1,35 @@
+---
+parent: "api_v1_test-suites"
+name: "api_v1_test-suites_post_XSS_Injection"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/test-suites"
+method: "POST"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"assertions\":[],\"auth\":\"{{@Random | 8}}\",\"authors\":[],\"category\"\
+    :\"{{@Random | 8}}\",\"cleanup\":[],\"description\":\"{{@XSSSQLInjections}}\"\
+    ,\"endpoint\":\"{{@Random | 8}}\",\"headers\":[],\"inactive\":null,\"init\":[],\"\
+    method\":\"{{@Random | 8}}\",\"name\":\"{{@Random | 8}}\",\"parent\":\"{{@Random\
+    \ | 8}}\",\"policies\":{\"cleanupExec\":\"{{@Random | 8}}\",\"initExec\":\"{{@Random\
+    \ | 8}}\",\"logger\":\"{{@Random | 8}}\",\"repeat\":null,\"repeatDelay\":null,\"\
+    repeatModule\":\"{{@Random | 8}}\",\"repeatOnFailure\":null,\"timeoutSeconds\"\
+    :null},\"project\":{\"inactive\":null,\"name\":\"{{@Random | 8}}\",\"org\":{\"\
+    inactive\":null,\"name\":\"{{@Random | 8}}\"}},\"props\":null,\"publishToMarketplace\"\
+    :null,\"severity\":\"{{@Random | 8}}\",\"tags\":[],\"testCases\":[],\"type\":\"\
+    {{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "XSS_Injection"
+severity: "Major"
+inactive: false
+policies: null
