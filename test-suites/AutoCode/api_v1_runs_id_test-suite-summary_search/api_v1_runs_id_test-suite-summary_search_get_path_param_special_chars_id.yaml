@@ -1,0 +1,22 @@
+---
+parent: "api_v1_runs_id_test-suite-summary_search"
+name: "api_v1_runs_id_test-suite-summary_search_get_path_param_special_chars_id"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/runs/!@#$%^&*()/test-suite-summary/search"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Negative"
+severity: "Major"
+inactive: false
+policies: null
