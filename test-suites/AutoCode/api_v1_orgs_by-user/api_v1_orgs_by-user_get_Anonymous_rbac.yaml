@@ -1,0 +1,22 @@
+---
+parent: "api_v1_orgs_by-user"
+name: "api_v1_orgs_by-user_get_Anonymous_rbac"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/orgs/by-user"
+method: "GET"
+auth: "Anonymous"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode == 403"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "RBAC"
+severity: "Critical"
+inactive: false
+policies: null

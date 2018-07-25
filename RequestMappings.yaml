@@ -1,0 +1,525 @@
+---
+- endPoint: "/api/v1/accounts"
+  method: "POST"
+  sampleBody: "{\n  'accessKey' : null,\n  'accountType' : 'Email',\n  'allowedRegions'\
+    \ : [ ],\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name' : null,\n\
+    \  'org' : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id' : null,\n\
+    \    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate' : null,\n\
+    \    'name' : null,\n    'version' : null\n  },\n  'prop1' : null,\n  'prop2'\
+    \ : null,\n  'prop3' : null,\n  'region' : null,\n  'secretKey' : null,\n  'version'\
+    \ : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/accounts/{id}"
+  method: "PUT"
+  sampleBody: "{\n  'accessKey' : null,\n  'accountType' : 'Email',\n  'allowedRegions'\
+    \ : [ ],\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name' : null,\n\
+    \  'org' : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id' : null,\n\
+    \    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate' : null,\n\
+    \    'name' : null,\n    'version' : null\n  },\n  'prop1' : null,\n  'prop2'\
+    \ : null,\n  'prop3' : null,\n  'region' : null,\n  'secretKey' : null,\n  'version'\
+    \ : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/bot-clusters"
+  method: "POST"
+  sampleBody: "{\n  'account' : {\n    'accessKey' : null,\n    'accountType' : 'AWS',\n\
+    \    'allowedRegions' : [ ],\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'prop1' : null,\n    'prop2' : null,\n   \
+    \ 'prop3' : null,\n    'region' : null,\n    'secretKey' : null,\n    'version'\
+    \ : null\n  },\n  'cloudType' : 'DIGITAL_OCEAN',\n  'createdBy' : null,\n  'createdDate'\
+    \ : null,\n  'driver' : 'MANUAL',\n  'id' : null,\n  'inactive' : null,\n  'key'\
+    \ : null,\n  'live' : null,\n  'manual' : null,\n  'manualScript' : null,\n  'max'\
+    \ : null,\n  'min' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'nodeId' : null,\n  'org' : {\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'region' : null,\n  'status' : 'FAILED',\n  'version' : null,\n  'visibility'\
+    \ : 'PUBLIC'\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/bot-clusters/{id}"
+  method: "PUT"
+  sampleBody: "{\n  'account' : {\n    'accessKey' : null,\n    'accountType' : 'AWS',\n\
+    \    'allowedRegions' : [ ],\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'prop1' : null,\n    'prop2' : null,\n   \
+    \ 'prop3' : null,\n    'region' : null,\n    'secretKey' : null,\n    'version'\
+    \ : null\n  },\n  'cloudType' : 'DIGITAL_OCEAN',\n  'createdBy' : null,\n  'createdDate'\
+    \ : null,\n  'driver' : 'MANUAL',\n  'id' : null,\n  'inactive' : null,\n  'key'\
+    \ : null,\n  'live' : null,\n  'manual' : null,\n  'manualScript' : null,\n  'max'\
+    \ : null,\n  'min' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'nodeId' : null,\n  'org' : {\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'region' : null,\n  'status' : 'FAILED',\n  'version' : null,\n  'visibility'\
+    \ : 'PUBLIC'\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/data-records"
+  method: "PUT"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'dataSet' : null,\n\
+    \  'id' : null,\n  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate'\
+    \ : null,\n  'record' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/data-records"
+  method: "POST"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'dataSet' : null,\n\
+    \  'id' : null,\n  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate'\
+    \ : null,\n  'record' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/data-sets"
+  method: "PUT"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n\
+    \  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name'\
+    \ : null,\n  'project' : {\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'version' : null\n  },\n  'props' : null,\n\
+    \  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/data-sets"
+  method: "POST"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n\
+    \  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name'\
+    \ : null,\n  'project' : {\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'version' : null\n  },\n  'props' : null,\n\
+    \  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/envs"
+  method: "PUT"
+  sampleBody: "{\n  'auths' : [ ],\n  'baseUrl' : null,\n  'createdBy' : null,\n \
+    \ 'createdDate' : null,\n  'description' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name' : null,\n\
+    \  'projectId' : null,\n  'refId' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/envs"
+  method: "POST"
+  sampleBody: "{\n  'auths' : [ ],\n  'baseUrl' : null,\n  'createdBy' : null,\n \
+    \ 'createdDate' : null,\n  'description' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name' : null,\n\
+    \  'projectId' : null,\n  'refId' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/issue-trackers/issue-tracker-bot"
+  method: "POST"
+  sampleBody: "{\n  'account' : {\n    'accessKey' : null,\n    'accountType' : 'Microsoft_VSTS_Git',\n\
+    \    'allowedRegions' : [ ],\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'prop1' : null,\n    'prop2' : null,\n   \
+    \ 'prop3' : null,\n    'region' : null,\n    'secretKey' : null,\n    'version'\
+    \ : null\n  },\n  'createdBy' : null,\n  'createdDate' : null,\n  'description'\
+    \ : null,\n  'id' : null,\n  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate'\
+    \ : null,\n  'name' : null,\n  'opts' : [ ],\n  'org' : {\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'prop1' : null,\n  'prop2' : null,\n  'prop3' : null,\n  'prop4' : null,\n\
+    \  'prop5' : null,\n  'skill' : {\n    'createdBy' : null,\n    'createdDate'\
+    \ : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n\
+    \    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n  },\n\
+    \  'state' : 'INACTIVE',\n  'version' : null,\n  'visibility' : 'ORG_PUBLIC'\n\
+    }"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/issue-trackers/{id}"
+  method: "PUT"
+  sampleBody: "{\n  'account' : {\n    'accessKey' : null,\n    'accountType' : 'Microsoft_VSTS_Git',\n\
+    \    'allowedRegions' : [ ],\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'prop1' : null,\n    'prop2' : null,\n   \
+    \ 'prop3' : null,\n    'region' : null,\n    'secretKey' : null,\n    'version'\
+    \ : null\n  },\n  'createdBy' : null,\n  'createdDate' : null,\n  'description'\
+    \ : null,\n  'id' : null,\n  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate'\
+    \ : null,\n  'name' : null,\n  'opts' : [ ],\n  'org' : {\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'prop1' : null,\n  'prop2' : null,\n  'prop3' : null,\n  'prop4' : null,\n\
+    \  'prop5' : null,\n  'skill' : {\n    'createdBy' : null,\n    'createdDate'\
+    \ : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n\
+    \    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n  },\n\
+    \  'state' : 'INACTIVE',\n  'version' : null,\n  'visibility' : 'ORG_PUBLIC'\n\
+    }"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/jobs"
+  method: "PUT"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'cron' : null,\n\
+    \  'description' : null,\n  'environment' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'issueTracker' : {\n    'account' : null,\n    'id' : null,\n   \
+    \ 'name' : null,\n    'url' : null\n  },\n  'modifiedBy' : null,\n  'modifiedDate'\
+    \ : null,\n  'name' : null,\n  'nextFire' : null,\n  'notifications' : [ ],\n\
+    \  'project' : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id'\
+    \ : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'version' : null\n  },\n  'refId' : null,\n\
+    \  'regions' : null,\n  'tags' : [ ],\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/jobs"
+  method: "POST"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'cron' : null,\n\
+    \  'description' : null,\n  'environment' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'issueTracker' : {\n    'account' : null,\n    'id' : null,\n   \
+    \ 'name' : null,\n    'url' : null\n  },\n  'modifiedBy' : null,\n  'modifiedDate'\
+    \ : null,\n  'name' : null,\n  'nextFire' : null,\n  'notifications' : [ ],\n\
+    \  'project' : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id'\
+    \ : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'version' : null\n  },\n  'refId' : null,\n\
+    \  'regions' : null,\n  'tags' : [ ],\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/notifications"
+  method: "POST"
+  sampleBody: "{\n  'accessKey' : null,\n  'account' : {\n    'accessKey' : null,\n\
+    \    'accountType' : 'GitHub',\n    'allowedRegions' : [ ],\n    'createdBy' :\
+    \ null,\n    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n\
+    \    'modifiedBy' : null,\n    'modifiedDate' : null,\n    'name' : null,\n  \
+    \  'org' : {\n      'createdBy' : null,\n      'createdDate' : null,\n      'id'\
+    \ : null,\n      'inactive' : null,\n      'modifiedBy' : null,\n      'modifiedDate'\
+    \ : null,\n      'name' : null,\n      'version' : null\n    },\n    'prop1' :\
+    \ null,\n    'prop2' : null,\n    'prop3' : null,\n    'region' : null,\n    'secretKey'\
+    \ : null,\n    'version' : null\n  },\n  'channel' : null,\n  'createdBy' : null,\n\
+    \  'createdDate' : null,\n  'id' : null,\n  'inactive' : null,\n  'modifiedBy'\
+    \ : null,\n  'modifiedDate' : null,\n  'name' : null,\n  'org' : {\n    'createdBy'\
+    \ : null,\n    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n\
+    \    'modifiedBy' : null,\n    'modifiedDate' : null,\n    'name' : null,\n  \
+    \  'version' : null\n  },\n  'secretKey' : null,\n  'token' : null,\n  'type'\
+    \ : 'SLACK',\n  'version' : null,\n  'visibility' : 'PRIVATE'\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/notifications/{id}"
+  method: "PUT"
+  sampleBody: "{\n  'accessKey' : null,\n  'account' : {\n    'accessKey' : null,\n\
+    \    'accountType' : 'GitHub',\n    'allowedRegions' : [ ],\n    'createdBy' :\
+    \ null,\n    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n\
+    \    'modifiedBy' : null,\n    'modifiedDate' : null,\n    'name' : null,\n  \
+    \  'org' : {\n      'createdBy' : null,\n      'createdDate' : null,\n      'id'\
+    \ : null,\n      'inactive' : null,\n      'modifiedBy' : null,\n      'modifiedDate'\
+    \ : null,\n      'name' : null,\n      'version' : null\n    },\n    'prop1' :\
+    \ null,\n    'prop2' : null,\n    'prop3' : null,\n    'region' : null,\n    'secretKey'\
+    \ : null,\n    'version' : null\n  },\n  'channel' : null,\n  'createdBy' : null,\n\
+    \  'createdDate' : null,\n  'id' : null,\n  'inactive' : null,\n  'modifiedBy'\
+    \ : null,\n  'modifiedDate' : null,\n  'name' : null,\n  'org' : {\n    'createdBy'\
+    \ : null,\n    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n\
+    \    'modifiedBy' : null,\n    'modifiedDate' : null,\n    'name' : null,\n  \
+    \  'version' : null\n  },\n  'secretKey' : null,\n  'token' : null,\n  'type'\
+    \ : 'SLACK',\n  'version' : null,\n  'visibility' : 'PRIVATE'\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/orgs"
+  method: "POST"
+  sampleBody: "{\n  'billingEmail' : null,\n  'company' : null,\n  'createdBy' : null,\n\
+    \  'createdDate' : null,\n  'description' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'location' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'orgPlan' : 'FREE',\n  'orgType' : 'ENTERPRISE',\n  'version'\
+    \ : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/orgs/{id}"
+  method: "PUT"
+  sampleBody: "{\n  'billingEmail' : null,\n  'company' : null,\n  'createdBy' : null,\n\
+    \  'createdDate' : null,\n  'description' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'location' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'orgPlan' : 'FREE',\n  'orgType' : 'ENTERPRISE',\n  'version'\
+    \ : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/orgs/{orgId}/users/add-member"
+  method: "POST"
+  sampleBody: "{\n  'confirmPassword' : null,\n  'createdBy' : null,\n  'createdDate'\
+    \ : null,\n  'email' : null,\n  'id' : null,\n  'inactive' : null,\n  'modifiedBy'\
+    \ : null,\n  'modifiedDate' : null,\n  'name' : null,\n  'orgId' : null,\n  'orgRole'\
+    \ : 'ENTERPRISE_ADMIN',\n  'password' : null,\n  'username' : null,\n  'version'\
+    \ : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/orgs/{orgId}/users/{userId}"
+  method: "PUT"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n\
+    \  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'org'\
+    \ : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id' : null,\n\
+    \    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate' : null,\n\
+    \    'name' : null,\n    'version' : null\n  },\n  'orgRole' : 'USER',\n  'status'\
+    \ : 'INVITED',\n  'users' : {\n    'company' : null,\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'email' : null,\n    'id' : null,\n    'inactive'\
+    \ : null,\n    'jobTitle' : null,\n    'location' : null,\n    'modifiedBy' :\
+    \ null,\n    'modifiedDate' : null,\n    'name' : null,\n    'username' : null,\n\
+    \    'version' : null\n  },\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/orgs/{orgId}/users/{userId}/reset-password"
+  method: "POST"
+  sampleBody: "{\n  'confirmPassword' : null,\n  'createdBy' : null,\n  'createdDate'\
+    \ : null,\n  'email' : null,\n  'id' : null,\n  'inactive' : null,\n  'modifiedBy'\
+    \ : null,\n  'modifiedDate' : null,\n  'name' : null,\n  'orgId' : null,\n  'orgRole'\
+    \ : 'ENTERPRISE_ADMIN',\n  'password' : null,\n  'username' : null,\n  'version'\
+    \ : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/projects"
+  method: "PUT"
+  sampleBody: "{\n  'account' : {\n    'accessKey' : null,\n    'accountType' : 'AWS',\n\
+    \    'allowedRegions' : [ ],\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'prop1' : null,\n    'prop2' : null,\n   \
+    \ 'prop3' : null,\n    'region' : null,\n    'secretKey' : null,\n    'version'\
+    \ : null\n  },\n  'autoGenSuites' : null,\n  'branch' : null,\n  'createdBy' :\
+    \ null,\n  'createdDate' : null,\n  'description' : null,\n  'genPolicy' : 'Create',\n\
+    \  'id' : null,\n  'inactive' : null,\n  'lastCommit' : null,\n  'lastSync' :\
+    \ null,\n  'licenses' : [ ],\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'openAPISpec' : null,\n  'org' : {\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'props' : null,\n  'url' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/projects"
+  method: "POST"
+  sampleBody: "{\n  'account' : {\n    'accessKey' : null,\n    'accountType' : 'AWS',\n\
+    \    'allowedRegions' : [ ],\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'prop1' : null,\n    'prop2' : null,\n   \
+    \ 'prop3' : null,\n    'region' : null,\n    'secretKey' : null,\n    'version'\
+    \ : null\n  },\n  'autoGenSuites' : null,\n  'branch' : null,\n  'createdBy' :\
+    \ null,\n  'createdDate' : null,\n  'description' : null,\n  'genPolicy' : 'Create',\n\
+    \  'id' : null,\n  'inactive' : null,\n  'lastCommit' : null,\n  'lastSync' :\
+    \ null,\n  'licenses' : [ ],\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'openAPISpec' : null,\n  'org' : {\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'props' : null,\n  'url' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/projects/{id}"
+  method: "PUT"
+  sampleBody: "{\n  'account' : {\n    'accessKey' : null,\n    'accountType' : 'AWS',\n\
+    \    'allowedRegions' : [ ],\n    'createdBy' : null,\n    'createdDate' : null,\n\
+    \    'id' : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'prop1' : null,\n    'prop2' : null,\n   \
+    \ 'prop3' : null,\n    'region' : null,\n    'secretKey' : null,\n    'version'\
+    \ : null\n  },\n  'autoGenSuites' : null,\n  'branch' : null,\n  'createdBy' :\
+    \ null,\n  'createdDate' : null,\n  'description' : null,\n  'genPolicy' : 'Create',\n\
+    \  'id' : null,\n  'inactive' : null,\n  'lastCommit' : null,\n  'lastSync' :\
+    \ null,\n  'licenses' : [ ],\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'openAPISpec' : null,\n  'org' : {\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'props' : null,\n  'url' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/projects/{id}/project-imports"
+  method: "POST"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n\
+    \  'imports' : null,\n  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate'\
+    \ : null,\n  'projectId' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/projects/{id}/project-sync"
+  method: "POST"
+  sampleBody: "{\n  'categories' : [ ],\n  'deleteAll' : null,\n  'projectId' : null\n\
+    }"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/projects/{projectId}/autocodeconfig"
+  method: "POST"
+  sampleBody: "{\n  'databases' : [ ],\n  'genPolicy' : 'None',\n  'logForgingPatterns'\
+    \ : [ ],\n  'openAPISpec' : null,\n  'propertyMapping' : null,\n  'testSuites'\
+    \ : [ ]\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/skills"
+  method: "PUT"
+  sampleBody: "{\n  'accessKey' : null,\n  'createdBy' : null,\n  'createdDate' :\
+    \ null,\n  'description' : null,\n  'host' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'key' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'opts' : [ ],\n  'org' : {\n    'createdBy' : null,\n   \
+    \ 'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'prop1' : null,\n  'prop2' : null,\n  'prop3' : null,\n  'prop4' : null,\n\
+    \  'prop5' : null,\n  'secretKey' : null,\n  'skillType' : 'ISSUE_TRACKER',\n\
+    \  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/skills"
+  method: "POST"
+  sampleBody: "{\n  'accessKey' : null,\n  'createdBy' : null,\n  'createdDate' :\
+    \ null,\n  'description' : null,\n  'host' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'key' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n\
+    \  'name' : null,\n  'opts' : [ ],\n  'org' : {\n    'createdBy' : null,\n   \
+    \ 'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'prop1' : null,\n  'prop2' : null,\n  'prop3' : null,\n  'prop4' : null,\n\
+    \  'prop5' : null,\n  'secretKey' : null,\n  'skillType' : 'ISSUE_TRACKER',\n\
+    \  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/system-settings"
+  method: "PUT"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n\
+    \  'inactive' : null,\n  'key' : null,\n  'label' : null,\n  'modifiedBy' : null,\n\
+    \  'modifiedDate' : null,\n  'value' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/test-suites"
+  method: "PUT"
+  sampleBody: "{\n  'assertions' : [ ],\n  'auth' : null,\n  'authors' : [ ],\n  'category'\
+    \ : 'XSS_Injection',\n  'cleanup' : [ ],\n  'createdBy' : null,\n  'createdDate'\
+    \ : null,\n  'description' : null,\n  'endpoint' : null,\n  'headers' : [ ],\n\
+    \  'id' : null,\n  'inactive' : null,\n  'init' : [ ],\n  'method' : 'DELETE',\n\
+    \  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name' : null,\n  'parent'\
+    \ : null,\n  'policies' : {\n    'cleanupExec' : null,\n    'initExec' : null,\n\
+    \    'logger' : null,\n    'repeat' : null,\n    'repeatDelay' : null,\n    'repeatModule'\
+    \ : null,\n    'repeatOnFailure' : null,\n    'timeoutSeconds' : null\n  },\n\
+    \  'project' : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id'\
+    \ : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'version' : null\n  },\n  'props' : null,\n\
+    \  'publishToMarketplace' : null,\n  'severity' : 'Trivial',\n  'tags' : [ ],\n\
+    \  'testCases' : [ ],\n  'type' : 'Abstract',\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/test-suites"
+  method: "POST"
+  sampleBody: "{\n  'assertions' : [ ],\n  'auth' : null,\n  'authors' : [ ],\n  'category'\
+    \ : 'XSS_Injection',\n  'cleanup' : [ ],\n  'createdBy' : null,\n  'createdDate'\
+    \ : null,\n  'description' : null,\n  'endpoint' : null,\n  'headers' : [ ],\n\
+    \  'id' : null,\n  'inactive' : null,\n  'init' : [ ],\n  'method' : 'DELETE',\n\
+    \  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'name' : null,\n  'parent'\
+    \ : null,\n  'policies' : {\n    'cleanupExec' : null,\n    'initExec' : null,\n\
+    \    'logger' : null,\n    'repeat' : null,\n    'repeatDelay' : null,\n    'repeatModule'\
+    \ : null,\n    'repeatOnFailure' : null,\n    'timeoutSeconds' : null\n  },\n\
+    \  'project' : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id'\
+    \ : null,\n    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate'\
+    \ : null,\n    'name' : null,\n    'org' : {\n      'createdBy' : null,\n    \
+    \  'createdDate' : null,\n      'id' : null,\n      'inactive' : null,\n     \
+    \ 'modifiedBy' : null,\n      'modifiedDate' : null,\n      'name' : null,\n \
+    \     'version' : null\n    },\n    'version' : null\n  },\n  'props' : null,\n\
+    \  'publishToMarketplace' : null,\n  'severity' : 'Trivial',\n  'tags' : [ ],\n\
+    \  'testCases' : [ ],\n  'type' : 'Abstract',\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/test-suites/deletedtestsuites"
+  method: "PUT"
+  sampleBody: "{\n  'deletedFileNames' : [ ],\n  'projectId' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/users/enterprise-sign-up"
+  method: "POST"
+  sampleBody: "{\n  'accountNonExpired' : null,\n  'accountNonLocked' : null,\n  'company'\
+    \ : null,\n  'createdBy' : null,\n  'createdDate' : null,\n  'credentialsNonExpired'\
+    \ : null,\n  'email' : null,\n  'enabled' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'jobTitle' : null,\n  'location' : null,\n  'modifiedBy' : null,\n\
+    \  'modifiedDate' : null,\n  'name' : null,\n  'password' : null,\n  'privileges'\
+    \ : [ ],\n  'username' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/users/org-add"
+  method: "POST"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n\
+    \  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'org'\
+    \ : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id' : null,\n\
+    \    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate' : null,\n\
+    \    'name' : null,\n    'version' : null\n  },\n  'orgRole' : 'USER',\n  'status'\
+    \ : 'INVITED',\n  'users' : {\n    'company' : null,\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'email' : null,\n    'id' : null,\n    'inactive'\
+    \ : null,\n    'jobTitle' : null,\n    'location' : null,\n    'modifiedBy' :\
+    \ null,\n    'modifiedDate' : null,\n    'name' : null,\n    'username' : null,\n\
+    \    'version' : null\n  },\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/users/org-remove"
+  method: "POST"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'id' : null,\n\
+    \  'inactive' : null,\n  'modifiedBy' : null,\n  'modifiedDate' : null,\n  'org'\
+    \ : {\n    'createdBy' : null,\n    'createdDate' : null,\n    'id' : null,\n\
+    \    'inactive' : null,\n    'modifiedBy' : null,\n    'modifiedDate' : null,\n\
+    \    'name' : null,\n    'version' : null\n  },\n  'orgRole' : 'USER',\n  'status'\
+    \ : 'INVITED',\n  'users' : {\n    'company' : null,\n    'createdBy' : null,\n\
+    \    'createdDate' : null,\n    'email' : null,\n    'id' : null,\n    'inactive'\
+    \ : null,\n    'jobTitle' : null,\n    'location' : null,\n    'modifiedBy' :\
+    \ null,\n    'modifiedDate' : null,\n    'name' : null,\n    'username' : null,\n\
+    \    'version' : null\n  },\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/users/personal-sign-up"
+  method: "POST"
+  sampleBody: "{\n  'accountNonExpired' : null,\n  'accountNonLocked' : null,\n  'company'\
+    \ : null,\n  'createdBy' : null,\n  'createdDate' : null,\n  'credentialsNonExpired'\
+    \ : null,\n  'email' : null,\n  'enabled' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'jobTitle' : null,\n  'location' : null,\n  'modifiedBy' : null,\n\
+    \  'modifiedDate' : null,\n  'name' : null,\n  'password' : null,\n  'privileges'\
+    \ : [ ],\n  'username' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/users/team-sign-up"
+  method: "POST"
+  sampleBody: "{\n  'accountNonExpired' : null,\n  'accountNonLocked' : null,\n  'company'\
+    \ : null,\n  'createdBy' : null,\n  'createdDate' : null,\n  'credentialsNonExpired'\
+    \ : null,\n  'email' : null,\n  'enabled' : null,\n  'id' : null,\n  'inactive'\
+    \ : null,\n  'jobTitle' : null,\n  'location' : null,\n  'modifiedBy' : null,\n\
+    \  'modifiedDate' : null,\n  'name' : null,\n  'password' : null,\n  'privileges'\
+    \ : [ ],\n  'username' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/vault"
+  method: "POST"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'description'\
+    \ : null,\n  'id' : null,\n  'inactive' : null,\n  'key' : null,\n  'modifiedBy'\
+    \ : null,\n  'modifiedDate' : null,\n  'org' : {\n    'createdBy' : null,\n  \
+    \  'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'val' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []
+- endPoint: "/api/v1/vault/{id}"
+  method: "PUT"
+  sampleBody: "{\n  'createdBy' : null,\n  'createdDate' : null,\n  'description'\
+    \ : null,\n  'id' : null,\n  'inactive' : null,\n  'key' : null,\n  'modifiedBy'\
+    \ : null,\n  'modifiedDate' : null,\n  'org' : {\n    'createdBy' : null,\n  \
+    \  'createdDate' : null,\n    'id' : null,\n    'inactive' : null,\n    'modifiedBy'\
+    \ : null,\n    'modifiedDate' : null,\n    'name' : null,\n    'version' : null\n\
+    \  },\n  'val' : null,\n  'version' : null\n}"
+  sqlQueryParams: []
+  sqlProperties: []

@@ -1,0 +1,22 @@
+---
+parent: "api_v1_projects"
+name: "api_v1_projects_post_Anonymous_rbac"
+description: null
+type: "SUITE"
+endpoint: "/api/v1/projects"
+method: "POST"
+auth: "Anonymous"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode == 403"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "RBAC"
+severity: "Critical"
+inactive: false
+policies: null
